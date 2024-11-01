@@ -1,0 +1,218 @@
+/*
+* SendMsgs - Admin Style
+*/
+.sendmsgs-container .sendmsgs-header {
+  /*background: rgba(0, 0, 0, 0) linear-gradient(154deg, #008fe2 0px, #00b29c 100%) repeat scroll 0 0;*/
+  padding: 0px;
+  color: #ffffff;
+}
+.sendmsgs-container .sendmsgs-header > h2 {
+    color: #fff;
+}
+.sendmsgs-container .sendmsgs-header > img.sendmsgs-banner {
+    width: 100%;
+    height: auto;
+}
+.sendmsgs-container .error {
+    color: #dc3232 !important;
+    display: block;
+}
+.sendmsgs_exclude_option > input[type=checkbox] {
+    margin-left: 23px;
+}
+.sendmsgs-page-options
+{
+	height:180px;
+	overflow:auto;
+	border:1px solid #dfdfdf;
+	padding:5px; 
+	margin-bottom:5px;
+    margin-left: 48px;
+	margin-top: 5px;
+	background-color: #ffffff;
+	width: 25em;
+}
+.sendmsgs-container .switch {
+    position: relative;
+    display: block;
+    vertical-align: top;
+    width: 75px;
+    height: 30px;
+    padding: 3px;
+    margin: 0 10px 10px 0;
+    background: linear-gradient(to bottom, #eeeeee, #FFFFFF 25px);
+    background-image: -webkit-linear-gradient(top, #eeeeee, #FFFFFF 25px);
+    border-radius: 18px;
+    box-shadow: inset 0 -1px white, inset 0 1px 1px rgba(0, 0, 0, 0.07);
+    cursor: pointer;
+}
+.sendmsgs-container .switch-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.sendmsgs-container .switch-label {
+    position: relative;
+    display: block;
+    height: inherit;
+    font-size: 10px;
+    text-transform: uppercase;
+    background: #eceeef;
+    border-radius: inherit;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.15);
+}
+.sendmsgs-container .switch-label:before, .sendmsgs-container .switch-label:after {
+	font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    margin-top: -.5em;
+    line-height: 1;
+    -webkit-transition: inherit;
+    -moz-transition: inherit;
+    -o-transition: inherit;
+    transition: inherit;
+}
+.sendmsgs-container .switch-label:before {
+    content: attr(data-off);
+    right: 11px;
+    color: #aaaaaa;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+}
+.sendmsgs-container .switch-label:after {
+    content: attr(data-on);
+    left: 11px;
+    color: #FFFFFF;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+}
+.sendmsgs-container .switch-input:checked ~ .switch-label {
+    background: #008EC2;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 0 3px rgba(0, 0, 0, 0.2);
+}
+.sendmsgs-container .switch-input:checked ~ .switch-label:before {
+    opacity: 0;
+}
+.sendmsgs-container .switch-input:checked ~ .switch-label:after {
+    opacity: 1;
+}
+.sendmsgs-container .switch-handle {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 28px;
+    height: 28px;
+    background: linear-gradient(to bottom, #FFFFFF 40%, #f0f0f0);
+    background-image: -webkit-linear-gradient(top, #FFFFFF 40%, #f0f0f0);
+    border-radius: 100%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+.sendmsgs-container .switch-handle:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -6px 0 0 -6px;
+    width: 12px;
+    height: 12px;
+    background: linear-gradient(to bottom, #eeeeee, #FFFFFF);
+    background-image: -webkit-linear-gradient(top, #eeeeee, #FFFFFF);
+    border-radius: 6px;
+    box-shadow: inset 0 1px rgba(0, 0, 0, 0.02);
+}
+.sendmsgs-container .switch-input:checked ~ .switch-handle {
+    left: 49px;
+    box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+ 
+/* Transition
+========================== */
+.sendmsgs-container .switch-label, .sendmsgs-container .switch-handle {
+    transition: All 0.3s ease;
+    -webkit-transition: All 0.3s ease;
+    -moz-transition: All 0.3s ease;
+    -o-transition: All 0.3s ease;
+}
+.sendmsgs-container .wrap{
+	width:700px;
+	margin:auto;
+	background:#FFFFFF;
+	margin-top:25px;
+	margin-bottom:100px;
+}
+.sendmsgs-container .textfield{
+	width:100%;
+}
+.sendmsgs_exclude_option {
+    margin-top: 10px;
+}
+.sendmsgs_exclude_option > input {
+    vertical-align: text-bottom;
+}
+.sendmsgs_collapse {
+    margin-bottom: 15px;
+}
+.sendmsgs_exclude_option > input {
+    margin-left: 23px;
+}
+.sendmsgs-page-options.disabled {
+    color: #999999;
+}
+.sendmsgs-page-options input[type=checkbox].disabled {
+    opacity: 0.3 !important;
+    cursor: not-allowed;
+}
+/*Message*/
+.sendmsgs-container .notice.is-dismissible
+{
+    position: relative;
+    margin: 5px 0 15px;
+    border-left: 4px solid #46b450;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 1px 12px;
+
+}
+.sendmsgs-container .notice.notice-error {
+    border-left: 4px solid #dc3232 !important;
+}
+.sendmsgs-container .notice-dismiss {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: medium none;
+  color: #b4b9be;
+  cursor: pointer;
+  margin: 0;
+  padding: 9px;
+  position: absolute;
+  right: 1px;
+  top: 0;
+}
+.sendmsgs-container input.error {
+    color: #333;
+    background-color: #fff;
+    border-color: #dfdfdf;
+    margin-bottom: 5px;
+}
+.sendmsgs-container span.error{
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+.sendmsgs-icon {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    display: inline-block;
+    height: 24px;
+    margin: 0 10px;
+    vertical-align: middle;
+    width: 24px;
+}
+.sendmsgs-icon.sendmsgs-icon-email {
+    background-image: url('../images/mail-24.png');
+}
+.sendmsgs-icon.sendmsgs-icon-question {
+    background-image: url('../images/question-24.png');
+}
+.sendmsgs-note {
+  font-size: 1.2em;
+}
